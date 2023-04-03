@@ -51,9 +51,8 @@ https://www.linkedin.com/in/thiago-limaaa-/
 
 
 
-## Screenshots
 
-![rotas](https://user-images.githubusercontent.com/102311684/229580177-a7e9fd54-4450-43a0-9712-51ddeb408711.png)
+
 
 
 
