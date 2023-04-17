@@ -1,7 +1,7 @@
 {
   "name": "labecommerce-backend",
   "version": "1.0.0",
-  "description": "Projeto 'Labecommerce' consiste na criação de uma API para um E-commerce vinculada a um banco de dados real.",
+  "description": "Labe Ecommerce",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,8 +9,7 @@
     "dev": "ts-node-dev src/index.ts"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/suuzanemoura/labecommerce-backend.git"
+    "type": "git"
   },
   "keywords": [
     "labecommerce",
@@ -25,12 +24,8 @@
     "knex",
     "postman"
   ],
-  "author": "Suzane Moura",
+  "author": "Thiago Lima",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/suuzanemoura/labecommerce-backend/issues"
-  },
-  "homepage": "https://github.com/suuzanemoura/labecommerce-backend#readme",
   "devDependencies": {
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
@@ -41,6 +36,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "joi": "^17.9.1"
+    "joi": "^17.9.1",
+    "knex": "^2.4.2",
+    "sqlite3": "^5.1.6"
   }
 }

@@ -36,7 +36,38 @@ INSERT INTO products (name, price, category_id) VALUES
 
 INSERT INTO products (name, price, category_id) VALUES ('Máscara do Zorro', 19.90, 4);
 
+
+CREATE TABLE purchases (
+  id INTEGER PRIMARY KEY,
+  user_id INTEGER NOT NULL,
+  product_id INTEGER NOT NULL,
+  quantity INTEGER NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES usuarios (id),
+  FOREIGN KEY (product_id) REFERENCES products (id)
+);
+ALTER TABLE purchases ADD COLUMN totalPrice REAL NOT NULL;
+
+
+  SELECT * FROM purchases;
+
   SELECT * FROM products;
 
+PRAGMA timezone = 'America/Sao_Paulo';
+
+CREATE TABLE categories (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+ 
+);
 
 
+
+
+
+SELECT id, name FROM categories;
+
+
+
+SELECT category_id, name, price FROM products;
